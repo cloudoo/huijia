@@ -40,7 +40,7 @@
             <div class="date-choose">
             </div>
         </div>
-
+<form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
                 <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
@@ -58,8 +58,9 @@
             <!-- 课程状态/反馈状态  1. 已发布 2. 确认开课 3. 已删除 4. 取消开课-->
             <span class="book">确认开课</span>                    
                     <!-- 报名状态 -->
-            <button type="button" class="book-btn" >预约</button>
+            <button type="submit" class="book-btn" >预约</button>
         </div>
+        </form>
         <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
@@ -82,6 +83,7 @@
             <button type="submit" class="book-btn">预约</button>
         </div>
         </form>
+        <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
                 <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
@@ -99,8 +101,10 @@
             <!-- 课程状态/反馈状态  1. 已发布 2. 确认开课 3. 已删除 4. 取消开课-->
                     
             <!-- 报名状态 -->
-            <button type="button" class="book-btn">预约</button>
+            <button type="submit" class="book-btn">预约</button>
         </div>
+        </form>
+        <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
                 <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
@@ -118,8 +122,10 @@
             <!-- 课程状态/反馈状态  1. 已发布 2. 确认开课 3. 已删除 4. 取消开课-->
                     
             <!-- 报名状态 -->
-            <button type="button" class="book-btn">预约</button>
+            <button type="submit" class="book-btn">预约</button>
         </div>
+        </form>
+        <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
                 <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
@@ -137,9 +143,9 @@
             <!-- 课程状态/反馈状态  1. 已发布 2. 确认开课 3. 已删除 4. 取消开课-->
                     
             <!-- 报名状态 -->
-            <button type="button" class="book-btn">预约</button>
+            <button type="submit" class="book-btn">预约</button>
         </div>
-            
+            </form>
         
     </div>
 <script src="/includes/lib.min.js" type="text/javascript"></script>
