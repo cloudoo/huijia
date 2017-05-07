@@ -66,10 +66,10 @@
                     《瑜伽经营管理培训》
                     四、从业格言：
                     脊柱的柔软度、是你身体的年轻度、找到您身体最合适的练习方式、筋长一寸，命长10年。
-                </p>
+                </p> 
             </div>
             <span class="book">
-                <a href="/course/booklist.hj">&nbsp;&nbsp;&nbsp;&nbsp;预约&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="<c:url value='/course/booklist.hj'/>">&nbsp;&nbsp;&nbsp;&nbsp;预约&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </span>
         </div>
         <div  class="coach flex">
@@ -107,7 +107,7 @@
                 </p>
             </div>
             <span class="book">
-                <a href="<c:url value='/course/booklist.hj'/>">预约</a>
+                <a href="<c:url value='/course/booklist.hj'/>">&nbsp;&nbsp;&nbsp;&nbsp;预约&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </span>
         </div>
         <div  class="coach flex">
@@ -142,7 +142,7 @@
                 </p>
             </div>
             <span class="book">
-                <a href="/course/booklist.hj">预约</a>
+                <a href="<c:url value='/course/booklist.hj'/> ">&nbsp;&nbsp;&nbsp;&nbsp;预约&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </span>
         </div>                             
     </div>

@@ -13,13 +13,13 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title></title>
-    <link rel="stylesheet" href="/includes/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/includes/style.debug.css?v=4241650">
+    <link rel="stylesheet" href="<c:url value= '/includes/bootstrap/css/bootstrap.min.css'/>">
+    <link rel="stylesheet" href="<c:url value= '/includes/style.debug.css?v=4241650'/> ">
 </head>
 <body>
     <div id="appendParent"></div><div id="ajaxWaiting"></div>
 <div class="group-activity" >
-    <div class="banner" style="background:url(/includes/images/img01.png) right center/cover no-repeat;">
+    <div class="banner" style="background:url(<c:url value='/includes/images/img01.png'/> ) right center/cover no-repeat;">
         <dl>
             <dt>静心静灵Yoga☆☆</dt>
             <dd>教练：Loly </dd>
@@ -156,7 +156,7 @@
     <div class="intro">
         <h3>正位健【瑜伽•普拉提•体态调整】</h3>
         <a href="" class="detail">
-            <img src="/includes/images/img01.png" >
+            <img src="<c:url value= '/includes/images/img01.png' />" >
             <span>详细介绍</span>
         </a>
         <div class="lesson">
@@ -201,9 +201,9 @@
         </div>
     </div>
 </div>
-<script src="/includes/lib.min.js" type="text/javascript"></script>
+<script src="<c:url value= '/includes/lib.min.js'/>" type="text/javascript"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script src="/includes/face.js?v=4241650"></script>
+<script src="<c:url value= '/includes/face.js?v=4241650' /> "></script>
 <!-- <script src="includes/main.debug.js?v=4241650"></script> -->
 <script>
     wx.config({
@@ -278,52 +278,4 @@
 </html>
 
 <script type="text/javascript">
-function ajax_get_comment()
-{
-    ajax_send_get('/wechat/Group/getCommentList?groupId=fb5856c1c3274726b3223aaa53611500&studioId=c1024ad5647d49c28a82dc93e77b260d', 'comment-list', 'comment-list-loading',null,null,function(){
-        var comments = document.querySelectorAll('.comment-con');
-        for(var c = 0 ,cdom,cl = comments.length; c < cl; c++){
-            cdom = comments[c];
-            cdom.innerHTML = $.parseFace(cdom.innerHTML);
-        }
-    });
-}
-// ajax_get_comment();
-//setInterval(function(){ajax_get_comment();}, 5000);
-$(window.document).scroll(function(){
-    if ($(document).height()-$(window).height()-$(window).scrollTop() < 50) {$('.group-footer').hide()}
-    else {$('.group-footer').show()}
-});
-
-$(function(){
-    var textarea_pre = document.getElementById('textarea_pre'),
-    height = textarea_pre.getBoundingClientRect().height;
-            $window = $(window);
-    $('#comment-content').on('input',function(e){
-
-        var t = e.target;
-        textarea_pre.innerHTML = t.value;
-        if(height !== textarea_pre.getBoundingClientRect().height){
-            $window.scrollTop(110000)
-        }
-    }).on('focus',function (argument) {
-        setTimeout(function(){
-            $window.scrollTop(110000);
-        },200);
-    });
-    $('#ajax_form_3').on('submit',function(){
-        var comment = textarea_pre.innerHTML;
-        if(!comment){
-            alert('评论不能为空');
-            return false;
-        }
-        $('#face_btn').triggerHandler('close');
-        // ajax_send_post('ajax_form_3', 'submit_btn_3', 'ajax_loading_3');
-    });
-    $('#face_btn').face({
-        textarea:'#comment-content',
-        lostFocus:'#submit'
-    });
-
-});
 </script>

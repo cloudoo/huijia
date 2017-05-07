@@ -13,8 +13,8 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title></title>
-    <link rel="stylesheet" href="/includes/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/includes/style.debug.css?v=4241650">
+    <link rel="stylesheet" href="<c:url value= '/includes/bootstrap/css/bootstrap.min.css' /> ">
+    <link rel="stylesheet" href="<c:url value= '/includes/style.debug.css?v=4241650' /> ">
 </head>
 <body>
     <input type="hidden" name='day' id="today" value="" />
@@ -43,7 +43,7 @@
 <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
-                <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
+                <a href="javascript:;" class="avatar" style=" background-image: url(<c:url value= '/includes/images/img01.png'/>); "></a>
                 <div class="col ">
                     <div class="coach-info">
                         <p class="time">10:00 - 11:00</p>
@@ -64,7 +64,7 @@
         <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
-                <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
+                <a href="javascript:;" class="avatar" style=" background-image: url(<c:url value='/includes/images/img01.png'/> ); "></a>
                 <div class="col ">
                     <div class="coach-info">
                         <p class="time">12:30 - 13:30</p>
@@ -86,7 +86,7 @@
         <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
-                <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
+                <a href="javascript:;" class="avatar" style=" background-image: url(<c:url value= '/includes/images/img01.png'/> ); "></a>
                 <div class="col ">
                     <div class="coach-info">
                         <p class="time">14:30 - 15:30</p>
@@ -107,7 +107,7 @@
         <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
-                <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
+                <a href="javascript:;" class="avatar" style=" background-image: url(<c:url value= '/includes/images/img01.png'/> ); "></a>
                 <div class="col ">
                     <div class="coach-info">
                         <p class="time">14:30 - 15:30</p>
@@ -128,7 +128,7 @@
         <form action="commoncoursedetail.hj">
         <div  class="coach">
             <div class="flex">
-                <a href="javascript:;" class="avatar" style=" background-image: url(/includes/images/img01.png); "></a>
+                <a href="javascript:;" class="avatar" style=" background-image: url(<c:url value= '/includes/images/img01.png'/> ); "></a>
                 <div class="col ">
                     <div class="coach-info">
                         <p class="time">14:30 - 15:30</p>
@@ -148,7 +148,7 @@
             </form>
         
     </div>
-<script src="/includes/lib.min.js" type="text/javascript"></script>
-<script src="/includes/main.debug.js?v=4241650"></script>
+<script src="<c:url value= '/includes/lib.min.js'/> " type="text/javascript"></script>
+<script src="<c:url value= '/includes/main.debug.js?v=4241650' /> "></script>
 </body>
 </html>

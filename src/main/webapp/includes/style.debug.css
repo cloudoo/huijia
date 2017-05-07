@@ -8,7 +8,7 @@ video{max-width: 100%;}
 .transition{-webkit-transition: all 0.4s ease-out;transition:all 0.4s ease-out}
 .icon{display:inline-block;vertical-align:middle}
 .col-xs-3{padding-left:5px;padding-right:5px}
-.btn-primary{display:block;width:50%;margin:0 auto;text-align:center;font-weight:bold;background-color:#3c8dbc;font-size:18px;color:#fff;line-height:1;padding-top:16px;padding-bottom:16px;text-decoration:none;border-color:#3c8dbc;border-radius:40px}
+.btn-primary{display:block;width:50%;margin:0 auto;text-align:center;font-weight:bold;background-color:#c9da2d;font-size:18px;color:#fff;line-height:1;padding-top:16px;padding-bottom:16px;text-decoration:none;border-color:#c9da2d;border-radius:40px}
 .btn-primary:active,.btn-primary:focus,.btn-primary:hover{border-color:#106aaa;color:#fff;outline:0;background-color:#106aaa}
 .btn-default{display:block;width:100%;background-color:#000;font-size:18px;color:#fff;line-height:1;padding-top:16px;padding-bottom:16px;text-decoration:none;border-radius:40px}
 .btn-default:active,.btn-default:focus,.btn-default:hover{outline:0;color:#fff;background-color:#1a1a1a}
@@ -102,15 +102,15 @@ video{max-width: 100%;}
 .plan li em{position:absolute;bottom:5px;width:100%;text-align:center;color:#ccc;font-size:12px;left: -1px;}
 .plan .arrange a,.plan .past a{pointer-events:none}
 .plan .arrange span,.plan .past span{color:#ccc}
-.plan .active{position:relative;background-color:#3c8dbc; }
+.plan .active{position:relative;background-color:#c9da2d; }
 .plan .active span{color: #fff}
 .plan .active:after{content:'';position:absolute;right:0;bottom:0;background-image:url(images/sprite2x.png);background-position:-98px -129px;height:18px;width:17px;background-size:194px 171px}
 
 /*日历*/
 .calendar-title{background: #c8c8c8;border-top: 1px solid #e1e1e1;position: relative}
 .calendar-title a,.calendar-title i{display: block;text-align: center;padding:3px 0;color: #232327;display: -webkit-box; display: box;-webkit-box-pack: center; box-pack: center; -webkit-box-orient: vertical; box-orient: vertical;}
-.calendar-title a.date{font-size: 26px;width: 42px;color: #3c8dbc}
-.calendar-title a.on{background: #3c8dbc; color: #fff}
+.calendar-title a.date{font-size: 26px;width: 42px;color: #c9da2d}
+.calendar-title a.on{background: #c9da2d; color: #fff}
 .calendar-title .datepicker{position: absolute;  top: 0;  right: 0;  visibility: hidden}
 /*时间选择*/
 .coach-time-list .coach{padding: 0;}
@@ -123,7 +123,7 @@ video{max-width: 100%;}
 
 .pickerdate{display:none;position:absolute;height:100%;top:0;left:0;z-index:999;width:100%}
 .pickerdate .date-choose{position:relative}
-.pickerdate h3{position:absolute;top:0;left:0;width:100%;z-index:9999;font-size:18px;font-weight:400;margin:0;text-align:center;padding:16px 0;color:#fff;background-color:#3c8dbc}
+.pickerdate h3{position:absolute;top:0;left:0;width:100%;z-index:9999;font-size:18px;font-weight:400;margin:0;text-align:center;padding:16px 0;color:#fff;background-color:#c9da2d}
 .picker{font-size:16px;text-align:left;line-height:1.2;color:#000;z-index:10000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .picker__input{cursor:default}
 .picker__input.picker__input--active{border-color:#0089ec}
@@ -185,7 +185,7 @@ video{max-width: 100%;}
 .picker__day--outfocus{color:#ddd;border-color:transparent}
 .picker__day--infocus:hover,.picker__day--outfocus:hover{cursor:pointer;color:#000;background:#b1dcfb}
 .picker__day--highlighted{border-color:#333}
-.picker--focused .picker__day--highlighted,.picker__day--highlighted:hover{cursor:pointer;color:#3c8dbc;background:#333;border-color:#333}
+.picker--focused .picker__day--highlighted,.picker__day--highlighted:hover{cursor:pointer;color:#c9da2d;background:#333;border-color:#333}
 .picker--focused .picker__day--selected,.picker__day--selected,.picker__day--selected:hover{background:#333;color:#ffe13c}
 .picker--focused .picker__day--disabled,.picker__day--disabled,.picker__day--disabled:hover{background:#fff;border-color:#fff;color:#cdcdcd;cursor:default}
 .picker__day--highlighted.picker__day--disabled,.picker__day--highlighted.picker__day--disabled:hover{background:#bbb}
@@ -205,24 +205,24 @@ video{max-width: 100%;}
 .calendar .head .nav-booking li{width:50%}
 
 /*课程预约*/
-.studio-select-title{background: #3c8dbc;color: #fff;padding:0 15px;display: block;position: relative;overflow: hidden;height: 44px;line-height: 44px;display: block}
+.studio-select-title{background: #c9da2d;color: #fff;padding:0 15px;display: block;position: relative;overflow: hidden;height: 44px;line-height: 44px;display: block}
 .studio-select-title .icon-location{display:inline-block;width:30px;height:30px;background:white;border-radius:100%;text-align:center;line-height:30px;}
 .coach-time-list .coach{padding: 0;}
 .coach-time-list .coach .flex{padding: 5px;}
-.coach-time-list .book-btn{display: block;background: #3c8dbc;padding: 10px 0;width: 100%;border: none;border-radius: 6px;text-align: center; color: #fff}
-.coach-time-list .coach .book{background: #3c8dbc;color: #fff;width: 62px;text-align: center;}
+.coach-time-list .book-btn{display: block;background: #c9da2d;padding: 10px 0;width: 100%;border: none;border-radius: 6px;text-align: center; color: #fff}
+.coach-time-list .coach .book{background: #c9da2d;color: #fff;width: 62px;text-align: center;}
 .coach-time-list .coach .book.disabled{background: #c8c8c8;color: #fff;}
 .coach-time-list .coach .time{font-size: large}
 .coach-time-list .coach-tip{padding: 2px 0;}
 .coach-list .coach{border: 1px solid #e1e1e1;border-radius: 6px;margin: 15px;padding: 10px 5px 10px 5px;color: #333;position: relative}
-.coach-list .coach .avatar{display: inline-block;width: 80px;height: 80px;border: 1px solid #3c8dbc;background-position: center;background-repeat: no-repeat;background-size: contain;overflow: hidden;border-radius: 100%;box-sizing: content-box;margin-right: 5px;}
+.coach-list .coach .avatar{display: inline-block;width: 80px;height: 80px;border: 1px solid #c9da2d;background-position: center;background-repeat: no-repeat;background-size: contain;overflow: hidden;border-radius: 100%;box-sizing: content-box;margin-right: 5px;}
 .coach-list .coach .avatar img{max-width: 100%;border-radius: 100%;}
 .coach-list p {font-size: 14px;color: #333;line-height: 1.4;}
 .coach-list .coach p{margin-bottom: 0;}
 .coach-list .coach .name{line-height: 100%;font-size: large;display: inline-block;color: #333;}
-.coach-list .coach .coach-info{width: 100%;border-bottom: 1px solid #3c8dbc;max-height: 53px;padding-bottom: 6px;overflow: hidden;}
+.coach-list .coach .coach-info{width: 100%;border-bottom: 1px solid #c9da2d;max-height: 53px;padding-bottom: 6px;overflow: hidden;}
 .coach-list .coach .coach-label {font-size: small;display: inline-block;vertical-align: text-bottom;white-space:nowrap}
-.coach-list .coach .coach-label li{display: inline-block;background: #3c8dbc;color: #fff;border-radius: 6px;padding:2px;vertical-align: -4px;}
+.coach-list .coach .coach-label li{display: inline-block;background: #c9da2d;color: #fff;border-radius: 6px;padding:2px;vertical-align: -4px;}
 .coach-list .coach .cocah-desc{word-break: break-all;overflow-wrap: break-word;width: 100%}
 .coach-list .coach .book{position: absolute;top:0;right: 10px;background: red;padding:2px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;color: white;font-size: smaller}
 .coach-list .coach .book.disabled{background: #c8c8c8;}
@@ -242,7 +242,7 @@ video{max-width: 100%;}
 .group-activity .banner dl{position:absolute;bottom:0;left:0;width:100%;padding: 5px;background: rgba(0,0,0,.5);color: #fff;}
 .group-activity .banner dt{font-size:22px}
 .group-activity .banner dd{font-size:14px}
-.group-activity .content{background-color:#3c8dbc;padding:10px;}
+.group-activity .content{background-color:#c9da2d;padding:10px;}
 .group-activity .others{background-color:#000;padding:45px 0 10px}
 .group-activity .others .title{margin-bottom:20px}
 .group-activity .others .title:after,.group-activity .others .title:before{content:" ";display:table}
@@ -259,7 +259,7 @@ video{max-width: 100%;}
 .group-activity .people a{position:relative;display:block;width:55px;text-align:center}
 .group-activity .people span{position:absolute;left:0;top:39px;z-index:2;width:100%;background-color:rgba(0,0,0,.3);height:16px;line-height:16px;text-align:center;color:#fff;font-size:12px}
 .group-activity .people img{width:55px;height:55px;margin-bottom:3px}
-.group-activity .intro{padding:15px 0 25px;background-color:#3c8dbc;}
+.group-activity .intro{padding:15px 0 25px;background-color:#c9da2d;}
 .group-activity .intro h3{text-align:center;font-size:16px;margin-bottom:15px}
 .group-activity .intro img{width:74px;height:74px;border-radius:100%}
 .group-activity .intro .detail{position:relative;padding:3px;display:block;width:80px;height:80px;margin:0 auto 15px;color:#fff;border-radius:100%}
@@ -291,7 +291,7 @@ video{max-width: 100%;}
 .group-activity .comment .face-btn.focus{color:#ff8200}
 .row-info{padding:8px 15px;background-color:#227db2; color: #fff;}
 .row-info p{font-size:12px;margin:0;line-height:18px}
-.row-info a{display:inline-block;border:2px solid #3c8dbc;border-radius:2px;font-size:14px;padding:6px 9px;color:#fff}
+.row-info a{display:inline-block;border:2px solid #c9da2d;border-radius:2px;font-size:14px;padding:6px 9px;color:#fff}
 .group-footer{box-sizing:border-box;overflow:hidden;position:fixed;z-index:9;bottom:0;left:0;width:100%}
 .comment-form {position: relative;}
 @media (max-width:321px){.row-info p{font-size:12px;line-height:16px}
@@ -382,7 +382,7 @@ video{max-width: 100%;}
 .coach-imgs{overflow: hidden}
 .coach-imgs .swiper-nav{position: absolute;bottom:65px;left: 0;width: 100%;height: 15px;text-align: center}
 .coach-imgs .swiper-nav li{display: inline-block;width: 10px;height: 10px;border-radius: 100%;background: white;margin: 0 5px;}
-.coach-imgs .swiper-nav .act{background: #3c8dbc}
+.coach-imgs .swiper-nav .act{background: #c9da2d}
 
 .coach-img img{max-width: 100%;vertical-align: middle}
 .coach-base-info{background: rgba(60,141,188,.8);position: absolute;bottom: 0;left:0;width: 100%;padding: 10px 0;color: #fff;line-height: 100%;}
@@ -397,7 +397,7 @@ video{max-width: 100%;}
 .coach-base-box .coach-base-li{padding: 8px 10px;border-bottom: 1px solid #e1e1e1;}
 .coach-base-box .coach-base-li:last-child{border: none;}
 .coach-base-box .coach-base-con{width: auto}
-.coach-base-box .coach-label{display: inline-block;background: #3c8dbc;color: #fff;text-align: center;padding:0 4px;border-radius: 3px;}
+.coach-base-box .coach-label{display: inline-block;background: #c9da2d;color: #fff;text-align: center;padding:0 4px;border-radius: 3px;}
 .coach-base-my{padding-bottom: 15px;}
 .coach-base-my .coach-base-title{border: none;}
 .coach-base-my-box{background: #e1e1e1;border-radius: 6px;padding: 10px}
@@ -415,6 +415,6 @@ video{max-width: 100%;}
 .course-list label input{visibility: hidden}
 .course-list label .icon-gou-cir{position: absolute;right: 5px;top:50%;-webkit-transform: translateY(-50%);;transform: translateY(-50%);color: #c8c8c8;font-size: x-large}
 .course-list label input:checked + .icon-gou-cir{color:#f8ce00;}
-.date-coach{display: block;background: #3c8dbc;padding: 15px 0;width: 100%;color: #fff;margin-top: -4px;margin: 0 auto;text-align: center;}
+.date-coach{display: block;background: #c9da2d;padding: 15px 0;width: 100%;color: #fff;margin-top: -4px;margin: 0 auto;text-align: center;}
 
 
