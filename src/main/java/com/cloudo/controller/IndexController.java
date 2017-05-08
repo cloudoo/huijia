@@ -23,34 +23,5 @@ public class IndexController {
 		return "index";
 	
 	}
-	
-	@RequestMapping("coach.hj")
-	public String getCoachInfo(Model model, HttpServletRequest request){
-		
-		return "index-coach";
-	
-	}
-	
-	@RequestMapping("customeDetail.hj")
-	public String getCustomeDetailPage(Model model, HttpServletRequest request){
-		
-		return "index-mydetailinfo";
-	
-	}
-	
-	@RequestMapping("custome.hj")
-	public String getCustomePage(Model model, HttpServletRequest request){
-		
-		return "index-myinfo";
-	
-	}
-	
-	@RequestMapping("reservation.hj")
-	public String getCustomeResverPage(Model model, HttpServletRequest request){
-		
-		return "index-reservation";
-	
-	}
-	
-	
+
 }
