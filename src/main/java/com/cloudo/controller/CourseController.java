@@ -22,10 +22,23 @@ public class CourseController {
 	public String commonDetail(Model model,HttpServletRequest request){
 		return "courseDetail";
 	}
-	
+
+
 	@RequestMapping("/booklist.hj")
 	public String book(Model model,HttpServletRequest request){
 		
 		return "selectDateTime";
+	}
+
+	@RequestMapping("/privatebook.hj")
+	public String privatebook(Model model,HttpServletRequest request){
+
+		return "selectCourse";
+	}
+
+	@RequestMapping("/mybooks.hj")
+	public String mybooks(Model model,HttpServletRequest request){
+
+		return "myCourse";
 	}
 }

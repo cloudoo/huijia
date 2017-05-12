@@ -18,7 +18,7 @@
 </head>
 
 <body >
-    <form method="post" >
+    <form method="post" action="<c:url value='/course/privatebook.hj' /> ">
 
         <input type="hidden" name='day' id="today" value="" />
         <input type="hidden" name='time' id="time" value="" />
@@ -264,7 +264,7 @@
             <div class="container">
                 <input type="submit" value="提交" id="submit_btn" class="hidden" />
                 <div id="ajax_loading" class="ajax_loading"></div>
-                <a href="javascript:;" class="btn btn-primary">下一步</a>
+                <a href="<c:url value='/course/privatebook.hj' />" class="btn btn-primary">下一步</a>
             </div>
         </div>
     </form>

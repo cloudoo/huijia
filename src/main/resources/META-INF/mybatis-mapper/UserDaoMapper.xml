@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csair.r.globalserv.dao.UserDao">
+
+
+	<resultMap id="user" type="com.csair.r.globalserv.domain.User">
+		<result column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="account" property="account" />
+		<result column="password" property="password" />
+		<result column="email" property="email" />
+		<result column="reg_dt" property="registDt" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		t.id,
+		t.name,
+		t.account,
+		t.password,
+		t.reg_dt,
+		t.email
+	</sql>
+
+	<select id="findAll" resultType="com.csair.r.globalserv.domain.User">
+		select * from user;
+	</select>
+
+	<insert id="save" parameterType="com.csair.r.globalserv.domain.User" useGeneratedKeys="true"
+		keyProperty="id">
+		INSERT INTO USER (
+		`name`, `account`, `password`,`email`)
+		values ( #{name}, #{account},
+		#{password},#{email});
+	</insert>
+
+
+	<update id="update" parameterType="com.csair.r.globalserv.domain.User">
+		UPDATE USER
+		SET `name` = #{name},
+		`account` = #{account},
+		`password` = #{password},
+		`email` =  #{email}
+		WHERE id = #{id}
+	</update>
+
+	<delete id="remove" parameterType="java.lang.Long">
+		DELETE
+		FROM USER
+		WHERE id =
+		#{id}
+	</delete>
+
+	<select id="find" parameterType="java.lang.Long" resultMap="user">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM user AS t
+		WHERE t.id = #{id}
+	</select>
+
+	<select id="query" parameterType="com.csair.r.globalserv.domain.User" resultMap="user">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM user AS t
+		WHERE 1=1
+		<if test="id>0">
+			and t.id = #{id}
+		</if>
+
+		<if test="name!=null">
+			and t.name = #{name}
+		</if>
+
+		<if test="account!=null">
+			and t.account like #{account}
+		</if>
+
+	</select>
+
+</mapper>

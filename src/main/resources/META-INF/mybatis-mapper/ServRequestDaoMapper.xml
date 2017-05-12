@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csair.r.globalserv.dao.ServRequestDao">
+
+	<resultMap id="servScore" type="com.csair.r.globalserv.domain.ServScore">
+		<result column="id" property="id" jdbcType="BIGINT"/>
+		<result column="fltdate" property="fltdate" jdbcType="TIMESTAMP"/>
+		<result column="aln" property="aln" jdbcType="VARCHAR"/>
+		<result column="fltno" property="fltno" jdbcType="VARCHAR"/>
+		<result column="fltno_suffix" property="fltnoSuffix" jdbcType="VARCHAR"/>
+		<result column="dep" property="dep" jdbcType="VARCHAR"/>
+		<result column="arv" property="arv" jdbcType="VARCHAR" />
+		<result column="sat_crew_appearance" property="satCrewAppearance" jdbcType="DOUBLE"/>
+		<result column="sat_crew_reacttime" property="satCrewReacttime" jdbcType="DOUBLE"/>
+		<result column="sat_crew_service" property="satCrewService" jdbcType="DOUBLE"/>
+		<result column="sat_personalization" property="satPersonalization" jdbcType="DOUBLE"/>
+		<result column="sat_infotrans" property="satInfotrans" jdbcType="DOUBLE"/>
+		<result column="sat_captain_broadcast" property="satCaptainBroadcast" jdbcType="DOUBLE"/>
+		<result column="sat_crew_broadcast" property="satCrewBroadcast" jdbcType="DOUBLE"/>
+		<result column="sat_bump_alert" property="satBumpAlert" jdbcType="DOUBLE"/>
+		<result column="sat_meal_variety" property="satMealVariety" jdbcType="DOUBLE"/>
+		<result column="sat_meal_weight" property="satMealWeight" jdbcType="DOUBLE"/>
+		<result column="sat_meal_taste" property="satMealTaste" jdbcType="DOUBLE"/>
+		<result column="sat_drink_variety" property="satDrinkVariety" jdbcType="DOUBLE"/>
+		<result column="sat_cabin_clean" property="satCabinClean" jdbcType="DOUBLE"/>
+		<result column="sat_cabin_facility_integrity" property="satCabinFacilityIntegrity" jdbcType="DOUBLE"/>
+		<result column="sat_seat_comfort" property="satSeatComfort" jdbcType="DOUBLE"/>
+		<result column="sat_toilet" property="satToilet" jdbcType="DOUBLE"/>
+		<result column="sat_magazine" property="satMagazine" jdbcType="DOUBLE"/>
+		<result column="sat_video" property="satVideo" jdbcType="DOUBLE"/>
+		<result column="sat_music" property="satMusic" jdbcType="DOUBLE"/>
+		<result column="sat_broadcast_flt_abnormal" property="satBroadcastFltAbnormal" jdbcType="DOUBLE"/>
+		<result column="sat_crew_attitude_delay" property="satCrewAttitudeDelay" jdbcType="DOUBLE"/>
+		<result column="sat_meal_delay" property="satMealDelay" jdbcType="DOUBLE"/>
+		<result column="sat_entertainment_delay" property="satEntertainmentDelay" jdbcType="DOUBLE"/>
+		<result column="sat_rescheduling_cancelling" property="satReschedulingCancelling" jdbcType="DOUBLE"/>
+	</resultMap>
+	
+	
+	<resultMap id="servComment" type="com.csair.r.globalserv.domain.ServComment">
+		<result column="id" property="id"  jdbcType="BIGINT"/>
+		<result column="fltdate" property="fltdate" jdbcType="TIMESTAMP"/>
+		<result column="aln" property="aln" jdbcType="VARCHAR" />
+		<result column="fltno" property="fltno" jdbcType="VARCHAR"/>
+		<result column="fltno_suffix" property="fltnoSuffix" jdbcType="VARCHAR"/>
+		<result column="dep" property="dep" jdbcType="VARCHAR"/>
+		<result column="arv" property="arv" jdbcType="VARCHAR" />
+		<result column="comment" property="comment" jdbcType="VARCHAR" />
+	</resultMap>
+	
+	
+	<sql id="tcomment">capse_serv_comment</sql>
+	<sql id="tscore">capse_serv_score</sql>
+
+
+
+	<select id="queryComment" parameterType="com.csair.r.golobalserv.param.ServRequest" resultMap="servComment">
+		SELECT * FROM
+		<include refid="tcomment"/>
+		AS t
+		WHERE 1=1
+		<if test = "startDate != null">
+		 	<![CDATA[
+		    AND t.fltdate >= #{startDate}
+		     ]]>
+		</if>
+		<if test = "endDate != null">
+		    <![CDATA[
+		    AND t.fltdate <= #{endDate}
+		    ]]>
+		</if>
+		<if test = "aln != null">
+		    AND t.aln = #{aln}
+		</if>
+		<if test = "fltno != null">
+		    AND t.fltno = #{fltno}
+		</if>
+		<if test = "dep != null">
+		    AND t.dep = #{dep}
+		</if>
+		<if test = "arv != null">
+		    AND t.arv = #{arv}
+		</if>
+	</select>
+
+	
+	<select id="queryScore" parameterType="com.csair.r.golobalserv.param.ServRequest" resultMap="servScore">
+		SELECT * FROM
+		<include refid="tscore"/>
+		AS t
+		WHERE 1=1
+		<if test = "startDate != null">
+		 	<![CDATA[
+		    AND t.fltdate >= #{startDate}
+		     ]]>
+		</if>
+		<if test = "endDate != null">
+		    <![CDATA[
+		    AND t.fltdate <= #{endDate}
+		    ]]>
+		</if>
+		<if test = "aln != null">
+		    AND t.aln = #{aln}
+		</if>		
+		<if test = "fltno != null">
+		    AND t.fltno = #{fltno}
+		</if>
+		<if test = "dep != null">
+		    AND t.dep = #{dep}
+		</if>
+		<if test = "arv != null">
+		    AND t.arv = #{arv}
+		</if>
+	</select>
+
+</mapper>

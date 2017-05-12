@@ -28,8 +28,8 @@
             <li><a href="<c:url value= 'coacher/list.hj'/> "><div class="ico ico1"></div>私教</a></li>
             <li><a href="<c:url value= 'course/commonlist.hj'/> "><div class="ico ico2"></div>团课</a></li>
             <li><a href="javascript:;"><div class="ico ico3"></div>签到</a></li>
-            <li><a href="javascript:;"><div class="ico ico4"></div>我的预约</a></li>
-            <li><a href="javascript:;"><div class="ico ico5"></div>个人信息</a></li>
+            <li><a href="<c:url value='course/mybooks.hj' /> "><div class="ico ico4"></div>我的预约</a></li>
+            <li><a href="<c:url value= 'user/info.hj'/>"><div class="ico ico5"></div>个人信息</a></li>
             <li><a href="javascript:;"><div class="ico ico6"></div>购买课程</a></li>
             <!--下面的不要删除-->
             <li class="justify_fix"></li>
