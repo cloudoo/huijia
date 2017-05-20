@@ -5,5 +5,4 @@ logs/
 .settings/
 .project
 .classpath
-.iml
-
+*.iml
