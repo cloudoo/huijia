@@ -10,10 +10,12 @@ import java.util.Date;
 public class ReservationInfo implements Serializable {
 
     private Long id;
+
     private Timestamp startTm;
     private Trainee trainee;
     private CoacherInfo coacherInfo;
     private CourseInfo courseInfo;
+    private String type;
     private int status;
     private Timestamp registDt;
     private Timestamp cancelTm;
@@ -58,6 +60,14 @@ public class ReservationInfo implements Serializable {
 
     public void setCourseInfo(CourseInfo courseInfo) {
         this.courseInfo = courseInfo;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getStatus() {
