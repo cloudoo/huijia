@@ -2,6 +2,7 @@ package com.cloudo.hj.domain;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Created by cloudoo on 2017/5/14
@@ -11,7 +12,15 @@ public class CoacherInfo implements Serializable{
     private Long id;
     private String account;
     private String name;
+    private Date brithday;
+    private String cellphone;
+    private String type;
+
+
     private String description;
+
+
+
     private String tags;
     private String picDir;
     private Timestamp opTm;
